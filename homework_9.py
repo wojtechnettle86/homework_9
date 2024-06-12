@@ -23,3 +23,31 @@ def minimum(list):
 numbers = [8, 15, 2, 8, 10, 42, 65]
 result = minimum(numbers)
 print(f"Minimální hodnota čísla z listu je: {result}")
+
+
+#task 3
+def prime_num(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+    #toto mám z chatgpt
+
+def count_primes(int_list):
+    prime_count = 0
+    for number in int_list:
+        if prime_num(number):
+            prime_count += 1
+    return prime_count
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17]
+result = count_primes(numbers)
+print(f"Počet prvočísel v seznamu je: {result}")
