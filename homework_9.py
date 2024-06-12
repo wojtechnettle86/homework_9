@@ -76,3 +76,13 @@ list_a = [1, 2, 3, 4, 5]
 list_b = [6, 7, 8, 9, 10]
 combined_list = combine_lists(list_a, list_b)
 print(f"Výsledek - oba listy: {combined_list}")
+
+
+#task 6
+def powers(list, power):
+    return [x ** power for x in list]
+
+numbers = [1, 2, 3, 4, 5]
+power_number = 2
+result = powers(numbers, power_number)
+print(f"Seznam výsledků umocnenych cisel je: {result}")
