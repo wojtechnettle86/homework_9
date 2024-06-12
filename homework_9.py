@@ -66,3 +66,13 @@ num_to_remove = 6
 removed_elements_count = remove(numbers, num_to_remove)
 print(f"Počet odstraněných čísel: {removed_elements_count}")
 print(f"Seznam po odstranění: {numbers}")
+
+
+#task 5
+def combine_lists(list1, list2):
+    return list1 + list2
+
+list_a = [1, 2, 3, 4, 5]
+list_b = [6, 7, 8, 9, 10]
+combined_list = combine_lists(list_a, list_b)
+print(f"Výsledek - oba listy: {combined_list}")
