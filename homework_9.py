@@ -51,3 +51,18 @@ def count_primes(int_list):
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 15, 17]
 result = count_primes(numbers)
 print(f"Počet prvočísel v seznamu je: {result}")
+
+
+#task 4
+def remove(list, num_remove):
+    original_length = len(list)
+    list[:] = [num for num in list if num != num_remove]
+    removed_count = original_length - len(list)
+    return removed_count
+
+
+numbers = [1, 2, 3, 4, 2, 5, 2, 6, 7, 2]
+num_to_remove = 6
+removed_elements_count = remove(numbers, num_to_remove)
+print(f"Počet odstraněných čísel: {removed_elements_count}")
+print(f"Seznam po odstranění: {numbers}")
